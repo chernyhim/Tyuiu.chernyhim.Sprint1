@@ -10,7 +10,7 @@ namespace Tyuiu.chernyhim.Sprint1.Task2.V7.Test
             DataService ds = new DataService();
             int x = 2;
             var res = ds.CalculateSquareCircle(x);
-            Assert.AreEqual(12.564, res);
+            Assert.AreEqual(12.5660, res);
         }
     }
 }

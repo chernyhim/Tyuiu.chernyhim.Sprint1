@@ -5,7 +5,9 @@ namespace Tyuiu.chernyhim.Sprint1.Task2.V7.Lib
     {
         public double CalculateSquareCircle(int value)
         {
-            return value * value * 3.141;
+            double a = value * value * 3.1415;
+            Math.Round(a, 3);
+            return a;
         }
     }
 }
