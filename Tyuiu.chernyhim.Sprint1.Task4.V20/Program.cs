@@ -1,4 +1,4 @@
-﻿using Tyuiu.chernyhim.Sprint1.Task3.V19.Lib;
+﻿using Tyuiu.chernyhim.Sprint1.Task4.V20.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -8,8 +8,8 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #1                                                               *");
         Console.WriteLine("* Тема: Организация ввода/вывода в консольных приложениях                 *");
-        Console.WriteLine("* Задание #3                                                              *");
-        Console.WriteLine("* Вариант #19                                                             *");
+        Console.WriteLine("* Задание #4                                                              *");
+        Console.WriteLine("* Вариант #20                                                              *");
         Console.WriteLine("* Выполнил: Черных Илья Максимович | ПКТб-25-1                            *");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
         Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
@@ -18,27 +18,18 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
-        double x1, x2, y1, y2;
+        double x, y;
 
-        Console.WriteLine("Введите значение X1:");
-        x1 = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите значение X2:");
-        x2 = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите значение Y1:");
-        y1 = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите значение Y2:");
-        y2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите значение X:");
+        x = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите значение Y:");
+        y = Convert.ToInt32(Console.ReadLine());
+       
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        if (ds.ElephCanMove(x1, x2, y1, y2)) {
-            Console.WriteLine("Ход возможен");
-        }
-        else
-        {
-            Console.WriteLine("Ход невозможен");
-        }
+        Console.WriteLine("Результат " + ds.Calculate(x, y));
         Console.ReadLine();
     }
 }
